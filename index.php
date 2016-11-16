@@ -104,7 +104,7 @@ include (__DIR__ . "/config.php");
 		<script src="./assets/libs/sweetalert/sweetalert.min.js"></script>
 
 		<!-- Dropfile -->
-		<script type="text/javascript" src="./assets/js/simpledropfile.js"></script>
+		<script type="text/javascript" src="./assets/js/dropfile.js"></script>
 		<script> 
 			$(document).ready(function()
 			{
