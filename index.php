@@ -92,7 +92,7 @@ include (__DIR__ . "/config.php");
 			<nav class="navbar navbar-inverse navbar-fixed-bottom">
 		        <div class="container">
 		            <p class="navbar-text">
-		              	&copy; <?= date('Y'); ?> Goldenscarab <a href="https://github.com/goldenscarab/slugifile"></a>
+		              	&copy; <?= date('Y'); ?> Goldenscarab  - <a href="https://github.com/goldenscarab/slugifile">Slugifile</a>
 		            </p>
 		        </div>
 		    </nav>
