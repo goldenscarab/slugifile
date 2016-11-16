@@ -11,10 +11,9 @@ Slugifile est un outils web à utiliser en mode « local » pour slugifier à la
 
 ## Installation
 
-1. Récupérer le code sur votre serveur Web local
+1. Récupérer le code sur votre machine
 
-`git clone https://github.com/goldenscarab/slugifile`
-
+`git clone https://github.com/goldenscarab/slugifile && cd slugifile && php -S localhost:8000`
 
 
 ## Configuration
@@ -78,6 +77,10 @@ Types de fichiers acceptés *(Tableau de Chaines)*
 
 ```
 
+## Lancement de l'application
+
+Dans votre navigateur :
+`localhost:8000`
 
 ## Support
 
