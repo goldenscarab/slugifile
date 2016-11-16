@@ -6,8 +6,7 @@
 	 ___) || || |_| || (_| || ||  _|| || ||  __/
 	|____/ |_| \__,_| \__, ||_||_|  |_||_| \___|
 	                  |___/  
-
- */
+*/
 
 /**
  * Interface Web pour slugifier facilement vos fichiers en local
@@ -34,14 +33,11 @@ include (__DIR__ . "/config.php");
 		<meta charset= "utf-8"/>
 		<meta name="robots" content="index,follow">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
 		<base href="URL_BASE_PATH"/> 
 		<title>Slugifile</title> 
-		
 		<link rel="stylesheet" href="./assets/css/dropfile.css" type="text/css"/>
 		<link rel="stylesheet" href="./assets/libs/bootstrap/css/bootstrap.min.css" type="text/css"/>
 		<link rel="stylesheet" href="./assets/libs/sweetalert/sweetalert.css" type="text/css"/>
-		
 		<style>
 			body {
 				padding-top: 70px;
@@ -92,7 +88,7 @@ include (__DIR__ . "/config.php");
 			<nav class="navbar navbar-inverse navbar-fixed-bottom">
 		        <div class="container">
 		            <p class="navbar-text">
-		              	&copy; <?= date('Y'); ?> Goldenscarab  - <a href="https://github.com/goldenscarab/slugifile">Slugifile</a>
+		              	&copy; <?= date('Y'); ?> Goldenscarab  - <a href="https://github.com/goldenscarab/slugifile" target="_blank">Slugifile</a>
 		            </p>
 		        </div>
 		    </nav>
