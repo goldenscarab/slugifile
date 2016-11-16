@@ -21,18 +21,18 @@ Slugifile est un outils web à utiliser en mode « local » pour slugifier à la
 
 Personnalisé avec votre éditeur préféré le fichier `config.php`
 
-### `$configured`
+### Variable `$configured`
 Valeur par defaut : `false`
 Mettre cette variable à `true` lorsque le fichier `config.php` est configuré
 
 
-### `$app_path`
+### Variable `$app_path`
 Valeur par defaut : `__DIR__`
 Habituellement, il n'est pas nécessaire de changer la valeur de cette variable
 
 
-### `$config`
-####`input_form_name`
+### Variable `$config`
+#### Clée `input_form_name`
 
 Nom du formulaire utilisé par la vue drag & drop *(Chaine)*
 
@@ -42,7 +42,7 @@ Nom du formulaire utilisé par la vue drag & drop *(Chaine)*
 'input_form_name' => 'uploaded_file',
 ```
 
-####`path_destination`
+#### Clée `path_destination`
 
 Dossier de destination des fichiers envoyé pour slugification *(Chaine)*
 
@@ -52,7 +52,7 @@ Dossier de destination des fichiers envoyé pour slugification *(Chaine)*
 'path_destination' => '/home/USER/Documents/',
 ```
 
-####`filename_separator`
+#### Clée `filename_separator`
 
 Sérarateur utiliser pour la slugification *(Chaine)*
 
@@ -62,7 +62,7 @@ Sérarateur utiliser pour la slugification *(Chaine)*
 'filename_separator' => '.',
 ```
 
-####`type_allow`
+#### Clée `type_allow`
 
 Types de fichiers acceptés *(Tableau de Chaines)*
 
