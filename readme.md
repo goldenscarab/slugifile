@@ -21,47 +21,59 @@ Slugifile est un outils web à utiliser en mode « local » pour slugifier à la
 Personnalisé avec votre éditeur préféré le fichier `config.php`
 
 ### Variable `$configured`
+
 Valeur par defaut : `false`
+
 Mettre cette variable à `true` lorsque le fichier `config.php` est configuré
 
 
 ### Variable `$app_path`
+
 Valeur par defaut : `__DIR__`
+
 Habituellement, il n'est pas nécessaire de changer la valeur de cette variable
 
 
 ### Variable `$config`
 #### Clée `input_form_name`
 
+Valeur par defaut : `file`
+
 Nom du formulaire utilisé par la vue drag & drop *(Chaine)*
 
 ```
-'input_form_name' => 'file', /* Defaut */
+'input_form_name' => 'file',
 'input_form_name' => 'drop',
 'input_form_name' => 'uploaded_file',
 ```
 
 #### Clée `path_destination`
 
+Valeur par defaut : `$app_path . '/uploaded/'`
+
 Dossier de destination des fichiers envoyé pour slugification *(Chaine)*
 
 ```
-'path_destination' => $app_path . '/uploaded/', /* Defaut */
+'path_destination' => $app_path . '/uploaded/',
 'path_destination' => $app_path . '/slugified/',
 'path_destination' => '/home/USER/Documents/',
 ```
 
 #### Clée `filename_separator`
 
+Valeur par defaut : `-`
+
 Sérarateur utiliser pour la slugification *(Chaine)*
 
 ```
-'filename_separator' => '-', /* Defaut */
+'filename_separator' => '-',
 'filename_separator' => '_',
 'filename_separator' => '.',
 ```
 
 #### Clée `type_allow`
+
+Valeur par defaut : `[all]`
 
 Types de fichiers acceptés *(Tableau de Chaines)*
 
