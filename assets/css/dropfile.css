@@ -1,0 +1,90 @@
+.dropzone
+{
+	border          : 3px dashed #A5A5A5;
+	background-color: white;
+	vertical-align  : middle;
+	position        : relative;
+	/*float           : left;*/
+	overflow        : hidden;
+	margin          : 3px;
+}
+
+.dropmessage
+{
+	position         : absolute;
+	width            : 100%;
+	text-align       : center;
+	top              : 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform    : translateY(-50%);
+	transform        : translateY(-50%);
+	text-transform   : uppercase;
+	text-shadow      : 1px 1px 1px rgba(0,0,0,0.5);
+	font-size        : 2em;
+	color            : #9F9F9F;
+}
+
+.droptype
+{
+	position         : absolute;
+	text-align       : center;
+	top              : 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform    : translateY(-50%);
+	transform        : translateY(-50%);
+	width            : 100%;	
+}
+
+.dropover
+{
+	border: 3px dashed #0055FF;
+}
+
+.opacity
+{
+	opacity : 0.4;
+}
+
+.uploadprogress
+{
+	position        : absolute;
+	z-index         : 20;
+	width           : 100%;
+	height          : 100%;
+	background-color: rgba(217,217,217,0.85);
+	left            : 0%;
+}
+
+.dropthumb img
+{
+	height: 100%;
+	left  : 0%;
+}
+
+.hidden
+{
+	display : none;
+}
+
+.clone
+{
+	width: initial !important;
+}
+
+.dropdelete
+{
+	position : absolute;
+	top : -12px;
+	right: 0;
+	font-size: 3em;
+	color : rgba(112,112,112,0.6);
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);;
+	font-weight: bold;
+}
+
+.dropdelete:hover
+{
+	color: rgba(255,255,255,0.8);
+	text-shadow: 1px 1px 1px #000000;
+	cursor : pointer;
+}
