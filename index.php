@@ -38,8 +38,9 @@ include (__DIR__ . "/config.php");
 		<base href="URL_BASE_PATH"/> 
 		<title>Slugifile</title> 
 		
-		<link rel="stylesheet" href="assets/css/dropfile.css" type="text/css"/>
-		<link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" type="text/css"/>
+		<link rel="stylesheet" href="./assets/css/dropfile.css" type="text/css"/>
+		<link rel="stylesheet" href="./assets/libs/bootstrap/css/bootstrap.min.css" type="text/css"/>
+		<link rel="stylesheet" href="./assets/libs/sweetalert/sweetalert.css" type="text/css"/>
 		
 		<style>
 			body {
@@ -98,11 +99,12 @@ include (__DIR__ . "/config.php");
 		</footer>
 
 		<!-- Scripts -->
-		<script src="assets/libs/jquery/jquery-3.1.1.min.js"></script>
-		<script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+		<script src="./assets/libs/jquery/jquery-3.1.1.min.js"></script>
+		<script src="./assets/libs/bootstrap/js/bootstrap.min.js"></script>
+		<script src="./assets/libs/sweetalert/sweetalert.min.js"></script>
 
 		<!-- Dropfile -->
-		<script type="text/javascript" src="assets/js/simpledropfile.js"></script>
+		<script type="text/javascript" src="./assets/js/simpledropfile.js"></script>
 		<script> 
 			$(document).ready(function()
 			{
@@ -110,13 +112,11 @@ include (__DIR__ . "/config.php");
 				$('#zone').dropfile({
 					message: '<i class="glyphicon glyphicon-save-file"></i> Glisser ici vos fichiers',
 					onefile: false
-				}, displayStatus);
+				}, displaySuccess, displayError);
 			});
 
 			// Affichage d'un message d'info
-			function displayStatus(drop) {
-				
-				console.info(drop);
+			function displaySuccess(drop) {
 
 				// Si la barre d'alert n'existe pas, on la crée
 				if ($('#status').length == 0) {
@@ -133,6 +133,13 @@ include (__DIR__ . "/config.php");
 				// On ajout les noms de fichiers
 				var line = "<tr><td>&nbsp;&nbsp;✔&nbsp;&nbsp;</td><td>" +drop.oldname + "&nbsp;&nbsp;</td><td>&nbsp;&nbsp;<i class=\"glyphicon glyphicon-arrow-right\"></i>&nbsp;&nbsp;<strong>"+drop.newname+"</strong></td></tr>";
 				$('#status').append(line);
+			}
+
+			// Affichage d'un boite d'alerte
+			function displayError(error)
+			{
+				console.log(error);
+				swal('Erreur', error.info, 'warning');
 			}
 			
 		</script> 

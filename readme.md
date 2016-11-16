@@ -63,7 +63,7 @@ Dossier de destination des fichiers envoyé pour slugification *(Chaine)*
 
 Valeur par defaut : `-`
 
-Sérarateur utiliser pour la slugification *(Chaine)*
+Sérarateur utilisé pour la slugification *(Chaine)*
 
 ```
 'filename_separator' => '-',

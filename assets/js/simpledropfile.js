@@ -1,6 +1,6 @@
 ;
 (function($) {
-	$.fn.dropfile = function(param, callback)
+	$.fn.dropfile = function(param, callback_success, callback_error)
 	{
 		/* Définition de l'objet principal */
 		var objdrop = {
@@ -149,15 +149,20 @@
 				if(datareceive.status == 'success') {
 
 					// Vérification qu'il y a un callback
-					if (typeof callback == 'function') {
-				        callback(datareceive); // On l'appelle en lui passant les données recues
+					if (typeof callback_success == 'function') {
+				        callback_success(datareceive); // On l'appelle en lui passant les données recues
 				    } else {
 				    	alert("Fichier uploadé :" + datareceive.name);
 				    }
 
 				} else {
 
-					alert(datareceive.info);
+					// Vérification qu'il y a un callback
+					if (typeof callback_error == 'function') {
+				        callback_error(datareceive); // On l'appelle en lui passant les données recues
+				    } else {
+				    	alert(datareceive.info);
+				    }
 				}
 			},
 			makeProgress(event, zoneprogress) {
