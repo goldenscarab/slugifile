@@ -41,7 +41,7 @@ Valeur par defaut : `file`
 
 Nom du formulaire utilisé par la vue drag & drop *(Chaine)*
 
-```
+```php
 'input_form_name' => 'file',
 'input_form_name' => 'drop',
 'input_form_name' => 'uploaded_file',
@@ -53,7 +53,7 @@ Valeur par defaut : `$app_path . '/uploaded/'`
 
 Dossier de destination des fichiers envoyé pour slugification *(Chaine)*
 
-```
+```php
 'path_destination' => $app_path . '/uploaded/',
 'path_destination' => $app_path . '/slugified/',
 'path_destination' => '/home/USER/Documents/',
@@ -65,7 +65,7 @@ Valeur par defaut : `-`
 
 Sérarateur utilisé pour la slugification *(Chaine)*
 
-```
+```php
 'filename_separator' => '-',
 'filename_separator' => '_',
 'filename_separator' => '.',
@@ -77,7 +77,7 @@ Valeur par defaut : `[all]`
 
 Types de fichiers acceptés *(Tableau de Chaines)*
 
-```
+```php
 'type_allow' => ['all'], /* Defaut */
 'type_allow' => [
     'image/jpeg',
